@@ -1,0 +1,25 @@
+{
+  "name": "chennaisilks_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "mysql2": "3.11.3",
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "node-env": "^0.1.6",
+    "promise-mysql": "^5.2.0"
+  }
+}
