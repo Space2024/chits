@@ -17,10 +17,11 @@ const knex_1 = __importDefault(require("knex"));
 const database = (0, knex_1.default)({
     client: "mysql",
     connection: {
-        host: "stpl-ktm.cb2ymckcwftz.ap-south-1.rds.amazonaws.com",
-        user: "admin",
-        password: "HHepo6YA0NPfYrVkegAz",
-        database: "onlinechit",
+        host: process.env.DB_HOST,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        database: process.env.DB_NAME,
+        port:process.env.DB_PORT
     },
 });
 exports.database = database;

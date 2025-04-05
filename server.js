@@ -31,7 +31,7 @@ const userrolescontroller_1 = __importDefault(require("./controller/userrolescon
 const chitgiftcontroller_1 = __importDefault(require("./controller/chitgiftcontroller"));
 const employeeconfigmenucontroller_1 = __importDefault(require("./controller/employeeconfigmenucontroller"));
 const knexcontroller_1 = __importDefault(require("./controller/knexcontroller"));
-const PORT = 8080
+const PORT = 8888
 app.use("/v1/group", groupcontroller_1.default);
 app.use("/v1/scheme", schemecontroller_1.default);
 app.use("/v1/common", commoncontroller_1.default);

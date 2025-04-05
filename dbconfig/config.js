@@ -15,11 +15,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ConnectDB = exports.EstablishDbConnection = void 0;
 const promise_1 = __importDefault(require("mysql2/promise"));
 exports.EstablishDbConnection = {
-    host: "stpl-ktm.cb2ymckcwftz.ap-south-1.rds.amazonaws.com",
-    user: "admin",
-    password: "HHepo6YA0NPfYrVkegAz",
-    database: "onlinechit",
-    port: Number(3306),
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT,
     waitForConnections: true,
 };
 // const ConnectDB = async () => {
